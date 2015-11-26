@@ -4,9 +4,6 @@ import Layout from '../components/Layout';
 import { resetErrorMessage } from '../actions';
 
 class App extends Component {
-	constructor(props) {
-		super(props);
-	}
 	render() {
 		return (
 			<Layout />

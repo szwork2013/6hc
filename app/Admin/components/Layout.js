@@ -1,14 +1,13 @@
 import React, { Component, PropTypes } from 'react';
-// import { Row, Col } from 'antd';
+import Header from './Header';
+import Main from './Main';
 
 export default class Layout extends Component {
-	constructor(props) {
-	    super(props);
-	}
 	render() {
 		return (
 			<div>
-				<h1>ADMIN</h1>
+				<Header />
+				<Main />
 			</div>
 		);
 	}
