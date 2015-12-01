@@ -1,12 +1,17 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Layout from '../components/Layout';
+import Header from '../components/Header';
+import Main from '../components/Main';
 import { resetErrorMessage } from '../actions';
 
 class App extends Component {
 	render() {
 		return (
-			<Layout />
+			<Layout>
+				<Header />
+				<Main children={this.props.children}/>
+			</Layout>
 		);
 	}
 }

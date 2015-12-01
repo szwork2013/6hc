@@ -13,7 +13,11 @@ module.exports = {
 		publicPath: '/static/'
 	},
 	plugins: [
-		
+		new webpack.optimize.MinChunkSizePlugin({
+			compress: {
+				warnings: false
+			}
+		}),
 		new webpack.optimize.OccurenceOrderPlugin(),
    		new webpack.HotModuleReplacementPlugin(),
     	new webpack.NoErrorsPlugin()

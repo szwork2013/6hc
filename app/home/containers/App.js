@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import Tabss from '../components/Layout';
 import { resetErrorMessage } from '../actions';
+import Layout from '../components/Layout';
 
 class App extends Component {
 	constructor(props) {
@@ -9,7 +9,7 @@ class App extends Component {
 	}
 	render() {
 		return (
-			<Tabss />
+			<Layout children={this.props.children}/>
 		);
 	}
 }

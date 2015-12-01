@@ -24,6 +24,16 @@ app.get("/admin", function(req, res){
 	res.sendFile(__dirname + '/app/admin/index.html');
 });
 
+app.get("*", function(req, res){
+	res.sendFile(__dirname + '/app/admin/index.html');
+});
+
+
+
+app.get("*", function(req, res){
+	res.sendFile(__dirname + '/app/admin/index.html');
+});
+
 app.listen(port, function(error){
 	if(error){
 		console.error(error);
